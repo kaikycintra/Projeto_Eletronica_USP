@@ -5,6 +5,6 @@ Esse repo reúne os dois trabalhos desenvolvidos para a disciplina de Eletrônic
 Membros do grupo:
 
 - Gustavo Bhering Grande - 12542780
-- Joao Pedro Hamata - 13672001
-- Lucas Oliveira Castro - 13695059
+- Antônio Carlos de Almeida Micheli Neto - 14559013
+- Maria Rita Gomides Cruz Hott - 14758717
 - Kaiky Henrique Ribeiro Cintra - 13731160
