@@ -1,6 +1,6 @@
 # SSC0180 - Eletrônica para Computação
 
-Esse repo contém os trabalhos desenvolvidos na disciplina SSC0180 - Eletrônica para Computação, ministrada pelo professor Eduardo do Valle Simoes da USP
+Repositório para os trabalhos desenvolvidos na disciplina SSC0180 - Eletrônica para Computação, ministrada pelo professor Eduardo do Valle Simoes da USP
 
 Membros dos projetos:
 
