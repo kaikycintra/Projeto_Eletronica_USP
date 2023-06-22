@@ -119,6 +119,9 @@ C = iF * Vripple
 C = 110mA * 2 * 60Hz * 2,32V
 C ≈ 790μF
 
+
+### O circuito
+
 [Circuito no Falstad](https://tinyurl.com/2mrqdjvw)
 ![Circuito](https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg)
 Esquemático no EAGLE
