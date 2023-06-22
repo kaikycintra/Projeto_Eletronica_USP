@@ -1,27 +1,26 @@
-# FonteEletronica
-Este trabalho, referente à disciplina Eletrônica para Computação(ICMC-USP), consiste no projeto e montagem de uma fonte de tensão ajustável entre 3V a 12V com capacidade de 100mA.
+# Fonte
+Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacidade de 100mA, partindo de uma corrente alternada de 127V e 60Hz.
 
-Adotou-se como parametros da entrada: Corrente alternada com 127V de tensao e 60Hz de frequencia.
-
-| Apresentação da Fonte | Cálculo do Ripple |
+| Fonte construída | Functionamento do circuito |
 | --- | --- |
 | <video src="https://user-images.githubusercontent.com/24720405/178084118-f01fbc68-67f3-4e2c-8ba8-4f21347edacc.mp4" style="max-width: 730px;"></video> | <video src="https://user-images.githubusercontent.com/24720405/178084461-28b8bc12-fb25-4542-be41-ac9ad6f14883.mp4" style="max-width: 730px;"></video> |
 
 | Componente | Preço |
 | --- | --- |
-| Transformador | R$28,99 |
-| Diodo 1n4007 x4 | R$0,20 * 4 = R$0,80 |
-| Capacitor 680uF 25v | R$5,78 |
-| Resistor 1kΩ | R$0,07 |
-| Resistor 750Ω | R$0,07 |
-| Resistor 2k2Ω | R$0,07 |
-| Potenciômetro Linear 5kΩ | R$7,00 |
-| Diodo Zener 13v | R$0,48 |
-| transistor NPN BC337-40 | R$0,69 |
-| LED | R$0,50 |
-| ***TOTAL*** | ***R$44,45*** |
+| Capacitor 1mF x2 | R$0,50 * 2 = R$1,00 |
+| LED x2 | R$0,50 * 2 = R$1,00 |
+| Diodo Zener 13V x2 | R$0,62 * 2 = R$1,24 |
+| Transistor NPN 60V | R$1,60 |
+| Potenciômetro Linear 10kΩ | R$7,00 |
+| Resistor 3k3Ω x10 | R$0,07 * 10 = R$0,70 |
+| Resistor 4k7Ω x10 | R$0,07 * 10 = R$0,70 |
+| Fusível 1,5A | R$1,10 |
+| Protoboard BB-01 | R$20,40 |
+| Jumper macho-macho 20cm x10 | R$0,70 * 10 = R$7,00 |
+| Plug AC 10A | R$6,00 |
+| ***TOTAL*** | ***R$47,74*** |
 
-*Componentes comprados na Ca&Ma em São Carlos, 28/06/2022
+*Componentes comprados na Ca&Ma em São Carlos, 21/06/2023
 
 ## Ficha Tecnica
 ### Transformador: 
@@ -49,7 +48,7 @@ Nesta etapa, os sinais eletricos arredondados pela caracteristica senoidal dos v
 ### Regulagem:
 Nesta etapa, os sinais eletricos ja trabalhados pelas etapas anteriores sao submentidos a uma maior establizacao e linearizacao em funcao da acao complementar entre o diodo Zener e o transistor, de modo que a saida do sistema configure uma tensao fixa e constante, a despeito de ligeiras imperfeicoes de processos anteriores ou mesmo da presenca de ruido por flutuacoes de corrente e temperatura. Finalmente, ativa-se o potenciometro para regular o valor de saida entre os especificados 3V e 12V.
 
-[Circuito no Falstad](https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJyRsBmcgUwFowwAoAN3DACYVKXe3NGijgQyfmkrSo0BKwDuXXmAngAnCrWRFykEJFhN+4VFYAVDYNMG+o7LKJpkmTSSE1ITkd2j512OoImGAI3DTIQtTQNK4INOpB6mjx2JCYTCyyieqsACYgNGF2aZTckD7gAHKl2PmFxdwIyNRw+hX61bX1ng7lIkVaZV1wdQW97QONzZ1gNaO6tqqUg3Y6SqWT1FJb6w2CM6u2e0c2ZyInkH0dE6uXDqvYO3esAE7k2H2YvKQPxWXlHQAY22ZQ6TxW-1k8BcOTh8MShTAMUg6gSIRo2G4mBouJaMDgbA2O36H2uF10EP2ZOpe1+WwkPg6OkxIAAXvQAHb0V7MOj8aAhWhhDCaDDwbhMTCiFT81hs8Q3cqKnw2dlcnl83SMwrKnUvJT64r0l6qH6fLb07GCEB5egAMwAhgBXAA2ABdGK76AUIDICWx3jrScGZmC4KwAOag6lU-CiPbBjqYYi7bUdJotFwHfGsd0gTDTFopvphsTMNAxQuQAyxb6EdSyIXCTCuIqYCrIZzgNp2p1u91vcTfanZ3UyQGJkerI28RPnAtFsyGjMzYOmHRYBxjzPD3g0ZUQChtAmQJAAJXoAGcAJZX92OzlA+i6EtbN-cNLLgup60-h5XGY7xvhMIFQjwexgbwY4vAA9g04gPK0iLKjAc7gKwQA)
+[Circuito no Falstad](https://tinyurl.com/2mrqdjvw)
 ![Circuito](https://user-images.githubusercontent.com/24720405/179834899-ba1af617-4492-4a14-963c-7540d1b17340.png)
 Esquemático no EAGLE
 ![Esquemático no EAGLE](https://i.imgur.com/WNwCi8H.png)
