@@ -3,7 +3,7 @@ Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacida
 
 | Fonte construída | Functionamento do circuito |
 | --- | --- |
-| <video src="https://user-images.githubusercontent.com/24720405/178084118-f01fbc68-67f3-4e2c-8ba8-4f21347edacc.mp4" style="max-width: 730px;"></video> | <video src="https://user-images.githubusercontent.com/24720405/178084461-28b8bc12-fb25-4542-be41-ac9ad6f14883.mp4" style="max-width: 730px;"></video> |
+| <video src="" style="max-width: 730px;"></video> | <video src="" style="max-width: 730px;"></video> |
 
 | Componente | Preço |
 | --- | --- |
@@ -22,31 +22,32 @@ Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacida
 
 *Componentes comprados na Ca&Ma em São Carlos, 21/06/2023
 
-## Ficha Tecnica
+## Componentes do Circuito
 ### Transformador: 
-Componente elétrico responsável por trasformar a tensão elétrica de entrada em valores mais adequados para uma determinada aplicação, utilizando-se de bobinas e dos princípios eletromagnéticos da Lei de Faraday-Lenz. No projeto, optou-se por um transformador comercial capaz de modificar uma entrada de 127V para aproximadamente 24v.
+Dispositivo elétrico que consegue alterar a tensão elétrica de entrada para níveis mais apropriados para uma aplicação específica, fazendo uso de enrolamentos e princípios eletromagnéticos da Lei de Faraday-Lenz. Neste projeto, utilizamos um transformador do laboratório que pôde ajustar a tensão em uma razão de 7.3 entre saída e entrada.
 ### Diodos:
-Componentes eletricos com a caracteristica de selecionar um sentido unico para a passagem de corrente eletrica. No projeto, sao utilizados na construcao de uma ponte de diodos, dispositivo retificador de tensao por possibilitar o aproveitamento de ambos os ciclos da corrente alternada de origem.
+Componentes elétricos que permitem o fluxo de corrente elétrica em uma única direção. No projeto, são utilizados para montar uma ponte de diodos, que atua como um retificador de tensão, aproveitando ambos os ciclos da corrente alternada.
 ### Resistores:
-Componentes eletricos dotados de valores fixos de resistencia responsáveis por garantir a manutencao da corrente no circuito em valores adequados para o funcionamento adequado de cada um dos componentes presentes no circuito.
+Componentes com resistência fixa que garantem o ajuste da corrente elétrica no circuito, permitindo não queimar nada outras partes essenciais.
 ### Capacitor:
-Componente elétrico capaz de armazenar pequenas quantidades de cargas elétricas, fornecendo corrente continua caso a tensão interna encontre-se superior à externa. Para obter um ripple inferior a 10%, seria necessário um capacitor de pelo menos 370uF (explicação no vídeo). No projeto, usamos um de 680uF.
+Dispositivo elétrico que consegue armazenar pequenas quantidades de carga elétrica, fornecendo corrente contínua se a tensão interna for maior que a externa. Para conseguir uma flutuação (ripple) menor que 10%, seria necessário um capacitor de no mínimo 370uF (conforme explicado no vídeo). No entanto, neste projeto, optamos por utilizar um de 680uF.
 ### Potenciômetro:
-Componente elétrico dotado de resistência variável, ou seja, capaz de regular a passagem de corrente e consequentemente modificar os valores de tensao do circuito. No projeto, foi utilizado para possibilitar a selecao dos valores de tensao entre 3V a 12V,  conforme descrito nas especificacoes.
+Elemento elétrico com resistência ajustável que permite regular o fluxo de corrente e, consequentemente, alterar os níveis de tensão do circuito. Neste projeto, foi empregado para possibilitar a escolha dos níveis de tensão entre 3V a 12V, conforme as especificações.
 ### Diodo Zener:
-Variacao do diodo tradicional caracterizado por permitir corrente eletrica somente sob a influencia de tensao superior a sua tensao de trabalho especificada pelo fabricante, limitando assim a voltagem maxima permitida pelo circuito. No projeto, foi utilizado para garantir valores de tensao maxima inferiores a 13V, com um espaço para erros do máximo de 12V.
+Uma variação do diodo comum, que só permite o fluxo de corrente elétrica se a tensão aplicada for superior à tensão de trabalho especificada pelo fabricante. Isso limita a voltagem máxima permitida pelo circuito. No projeto, foi usado para garantir níveis de tensão máxima inferiores a 13V, com uma margem de erro de no máximo 12V.
 ### Transistor:
-Componente elétrico capaz de trocar ou amplificar sinais e potencia eletrica. No projeto, foi utilizado na regulagem da corrente eletrica no circuito, para evitar desperdício de corrente no Diodo Zener.
+Componente elétrico que pode alterar ou amplificar sinais e potência elétrica. No projeto, foi empregado para controlar a corrente elétrica no circuito, evitando o desperdício de corrente no Diodo Zener.
 
 ## Funcionamento:
-### Transformacao:
-Nesta etapa, os sinais eletricos da entrada(corrente alternada com 127V de tensao e 60Hz de frequencia) tem sua DDP reduzida pelo transformador para valores proximos a 24V, sendo mantidas as demais caracteristicas de onda.
-### Retificacao:
-Nesta etapa, os sinais eletricos em corrente alternada(provenientes da etapa de transformacao) sao retificados para um sinal contiuamente positivo pela acao da ponte de diodos. Nesta estrutura, a disposicao geometrica dos diodos no circuito ora permite ora bloqueia a passagem de corrente eletrica, de modo a definir, durante ambos os ciclos da onda, um sentido unico para o fluxo de eletrons. O resultado do procedimento e uma reflexao completa dos valores negativos de tensao em relacao ao eixo das abcissas.
+### Transformação:
+Nesta fase, os sinais elétricos de entrada (corrente alternada com tensão de 127V e frequência de 60Hz) têm sua diferença de potencial diminuída pelo transformador para níveis próximos a 24V, mantendo o resto das características de onda.
+### Retificação:
+Nesta fase, os sinais elétricos em corrente alternada (vindos da fase de transformação) são retificados para um sinal continuamente positivo pela ação da ponte de diodos. A disposição dos diodos no circuito permite ou bloqueia a passagem de corrente elétrica, definindo um sentido único para o fluxo de elétrons durante ambos os ciclos da onda. O resultado é uma reflexão completa dos valores negativos de tensão em relação ao eixo do gráfico.
 ### Filtragem: 
-Nesta etapa, os sinais eletricos arredondados pela caracteristica senoidal dos valores de entrada sao aproximados para valores continuos pela acao do capacitor eletrolitico. Tal estrutura, apos ser carregada brevemente durante os periodos de voltagem maxima, supre com libercao de corrente eletrica os momentos de diminuicao na voltagem de entrada, de modo a simular uma saida de tensao continua, sendo suas imperfeicoes parametrizadas pelo ripple.
-### Regulagem:
-Nesta etapa, os sinais eletricos ja trabalhados pelas etapas anteriores sao submentidos a uma maior establizacao e linearizacao em funcao da acao complementar entre o diodo Zener e o transistor, de modo que a saida do sistema configure uma tensao fixa e constante, a despeito de ligeiras imperfeicoes de processos anteriores ou mesmo da presenca de ruido por flutuacoes de corrente e temperatura. Finalmente, ativa-se o potenciometro para regular o valor de saida entre os especificados 3V e 12V.
+Nesta fase, os sinais elétricos suavizados pela característica senoidal dos valores de entrada são ajustados para valores contínuos pela ação do capacitor eletrolítico. Após ser brevemente carregado durante os períodos de voltagem máxima, o capacitor libera corrente elétrica nos momentos de diminuição na voltagem de entrada, simulando uma saída de tensão contínua. As imperfeições são caracterizadas pelo ripple.
+### Regulação:
+Nesta fase, os sinais elétricos, já processados pelas fases anteriores, são submetidos a uma maior estabilização e linearização devido à ação conjunta do diodo Zener e do transistor. Assim, a saída do sistema apresenta uma tensão fixa e constante, apesar de pequenas imperfeições dos processos anteriores ou da presença de ruído por flutuações de corrente e temperatura. Finalmente, o potenciômetro é acionado para regular o valor de saída entre os especificados 3V e 12V.
+
 
 [Circuito no Falstad](https://tinyurl.com/2mrqdjvw)
 ![Circuito](https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg)
