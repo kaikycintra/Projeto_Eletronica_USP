@@ -38,6 +38,8 @@ Uma variação do diodo comum, que só permite o fluxo de corrente elétrica se 
 ### Transistor:
 Componente elétrico que pode alterar ou amplificar sinais e potência elétrica. No projeto, foi empregado para ajustar a corrente elétrica no final do circuito.
 
+
+
 ## Funcionamento:
 ### Transformação:
 Nesta fase, os sinais elétricos de entrada (corrente alternada com tensão de 127V e frequência de 60Hz) têm sua diferença de potencial diminuída pelo transformador para níveis próximos a 24,6V, mantendo o resto das características da onda.
@@ -48,21 +50,19 @@ Nesta fase, o capacitor libera corrente elétrica nos momentos de diminuição n
 ### Regulação:
 Nesta fase, o diodo Zener corrige o ripple ao limitar a voltagem da curva em 13V. Assim, a saída do sistema apresenta uma tensão fixa e constante com pequenas imperfeições. Finalmente, o potenciômetro é acionado para regular o valor de saída entre os especificados 3V e 12V.
 
-Desculpe pela confusão. Vou dividir o cálculo em cinco partes, conforme solicitado.
+
 
 ## Cálculos
 ### Etapa do transformador:
-Primeiro, calculamos a tensão de pico (que representa o ápice da função senoidal da tensão):
+Primeiro, calculamos a tensão de pico (que representa o ápice da curva senoidal da tensão):
 
 Vpico = Ventrada * √2
 Vpico = tensão de pico
 Ventrada = tensão de entrada da tomada (127V)
-
 Vpico = 127 * √2 = 180V
 
 Como queremos um transformador com uma razão de 1/7,3, a tensão de saída (Vs) será:
-17,3 = Vs/180
-
+1/7,3 = Vs/180
 Vs = 24,6V
 
 Como o zener precisa de uma tensão mínima de 0,7V cada, devemos subtrair 1,4V da tensão de saída:
@@ -75,10 +75,10 @@ Vripple = 0,1 * 23,2
 Vripple = 2,32V
 
 ### Tensão média:
-Como a corrente é alternada, os valores da ddp (diferença de potencial) e da corrente elétrica se alternam entre máximos e mínimos. Para obter resultados aproximados do circuito, calculamos a tensão média.
+Como a corrente é alternada, os valores da ddp (diferença de potencial) e da corrente elétrica se alternam entre máximos e mínimos. 
+Para obter resultados aproximados do circuito, calculamos a tensão média.
 
 Vmin = 23,2V - 2,32V = 20,8V
-
 Vmed = (Vmáx + Vmin)/2
 Vmed = (23,2V + 20,8V)/2
 Vmed = 22V
