@@ -30,7 +30,7 @@ Componentes elétricos que permitem o fluxo de corrente elétrica em uma única 
 ### Resistores:
 Componentes com resistência fixa que garantem o ajuste da corrente elétrica no circuito, permitindo não queimar nada outras partes essenciais.
 ### Capacitor:
-Dispositivo elétrico que consegue armazenar pequenas quantidades de carga elétrica, fornecendo corrente contínua se a tensão interna for maior que a externa. Para conseguir uma flutuação (ripple) menor que 10%, seria necessário um capacitor de no mínimo 790uF (conforme mostrado na seção de cálculos abaixo). No entanto, utilizamos um de 1mF por apresentar vantagens e estar mais barato.
+Dispositivo elétrico que consegue armazenar pequenas quantidades de carga elétrica, fornecendo corrente contínua se a tensão interna for maior que a externa. Para conseguir uma flutuação (ripple) menor que 10%, seria necessário um capacitor de no mínimo 790μF (conforme mostrado na seção de cálculos abaixo). No entanto, utilizamos um de 1mF por apresentar vantagens e estar mais barato.
 ### Potenciômetro:
 Componente com resistência ajustável que permite regular o fluxo de corrente e, consequentemente, alterar os níveis de tensão do circuito. Neste projeto, foi empregado para possibilitar a escolha dos níveis de tensão entre 3V a 12V, conforme especificado.
 ### Diodo Zener:
@@ -48,6 +48,76 @@ Nesta fase, o capacitor libera corrente elétrica nos momentos de diminuição n
 ### Regulação:
 Nesta fase, o diodo Zener corrige o ripple ao limitar a voltagem da curva em 13V. Assim, a saída do sistema apresenta uma tensão fixa e constante com pequenas imperfeições. Finalmente, o potenciômetro é acionado para regular o valor de saída entre os especificados 3V e 12V.
 
+Desculpe pela confusão. Vou dividir o cálculo em cinco partes, conforme solicitado.
+
+## Cálculos
+### Etapa do transformador:
+Primeiro, calculamos a tensão de pico (que representa o ápice da função senoidal da tensão):
+
+Vpico = Ventrada * √2
+Vpico = tensão de pico
+Ventrada = tensão de entrada da tomada (127V)
+
+Vpico = 127 * √2 = 180V
+
+Como queremos um transformador com uma razão de 1/7,3, a tensão de saída (Vs) será:
+17,3 = Vs/180
+
+Vs = 24,6V
+
+Como o zener precisa de uma tensão mínima de 0,7V cada, devemos subtrair 1,4V da tensão de saída:
+Vs = 24,6V - 1,4V
+Vs = 23,2V
+
+### Ripple:
+Consideramos uma tensão de ripple de 10% da tensão de saída, logo:
+Vripple = 0,1 * 23,2
+Vripple = 2,32V
+
+### Tensão média:
+Como a corrente é alternada, os valores da ddp (diferença de potencial) e da corrente elétrica se alternam entre máximos e mínimos. Para obter resultados aproximados do circuito, calculamos a tensão média.
+
+Vmin = 23,2V - 2,32V = 20,8V
+
+Vmed = (Vmáx + Vmin)/2
+Vmed = (23,2V + 20,8V)/2
+Vmed = 22V
+
+### Correntes:
+Calculamos as correntes nos diferentes componentes do circuito:
+
+iLed:
+iLed = Vmed/Rled
+iLed = 22V/3300Ω
+iLed = 6,6mA
+Vmed = tensão média
+Rled = resistência no LED (compramos a resistência e a conectamos em série com o LED)
+
+iZener:
+iZener = (Vmed - Vz)/R
+iZener = (22V - 13V)/3300Ω
+iZener = 2,7mA
+Vmed = tensão média
+Vz = tensão do zener (compramos um diodo de 13V)
+R = resistência (compramos a resistência e a conectamos com o diodo de zener)
+
+iPotenciômetro:
+iPotenciômetro = Vmed/(Rp + R + Rz)
+iPotenciômetro = 22V/(10000Ω + 4700Ω + 3300Ω)
+iPotenciômetro = 1,2mA
+Vmed = tensão média
+Rp = resistência do potenciômetro
+R = resistência (compramos a resistência e a colocamos em série com o potenciômetro)
+Rz = resistência do diodo de zener
+
+iSaída:
+iSaída = 100mA (saída esperada na fonte)
+
+### Capacitância:
+Para calcular a capacitância correta para filtrar o sistema, utilizamos a seguinte fórmula:
+C = iF * Vripple
+C = 110mA * 2 * 60Hz * 2,32V
+C ≈ 790μF
 
 [Circuito no Falstad](https://tinyurl.com/2mrqdjvw)
 ![Circuito](https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg)
