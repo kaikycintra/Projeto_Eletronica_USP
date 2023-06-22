@@ -171,8 +171,8 @@ C ≈ 790μF
 
 Esquemático no EAGLE
 
-<img src="https://i.imgur.com/WNwCi8H.png" width="700">
+<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg" width="700">
 
 Board no EAGLE
 
-<img src="https://i.imgur.com/DSsR56V.png" width="700">
+<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg" width="700">
