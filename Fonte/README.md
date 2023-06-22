@@ -163,12 +163,16 @@ C = 110mA * 2 * 60Hz * 2,32V
 C ≈ 790μF
 
 
-### O circuito
+## O circuito
 
 [Circuito no Falstad](https://tinyurl.com/2mrqdjvw)
-![Circuito](https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg)
+
+<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg" width="700">
+
 Esquemático no EAGLE
-![Esquemático no EAGLE](https://i.imgur.com/WNwCi8H.png)
+
+<img src="https://i.imgur.com/WNwCi8H.png" width="700">
+
 Board no EAGLE
 
-![Board no EAGLE](https://i.imgur.com/DSsR56V.png)
+<img src="https://i.imgur.com/DSsR56V.png" width="700">
