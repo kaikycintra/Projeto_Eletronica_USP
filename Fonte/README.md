@@ -49,7 +49,7 @@ Nesta etapa, os sinais eletricos arredondados pela caracteristica senoidal dos v
 Nesta etapa, os sinais eletricos ja trabalhados pelas etapas anteriores sao submentidos a uma maior establizacao e linearizacao em funcao da acao complementar entre o diodo Zener e o transistor, de modo que a saida do sistema configure uma tensao fixa e constante, a despeito de ligeiras imperfeicoes de processos anteriores ou mesmo da presenca de ruido por flutuacoes de corrente e temperatura. Finalmente, ativa-se o potenciometro para regular o valor de saida entre os especificados 3V e 12V.
 
 [Circuito no Falstad](https://tinyurl.com/2mrqdjvw)
-![Circuito](https://user-images.githubusercontent.com/24720405/179834899-ba1af617-4492-4a14-963c-7540d1b17340.png)
+![Circuito](https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg)
 Esquemático no EAGLE
 ![Esquemático no EAGLE](https://i.imgur.com/WNwCi8H.png)
 Board no EAGLE
