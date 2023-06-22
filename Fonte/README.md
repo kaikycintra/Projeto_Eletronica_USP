@@ -57,66 +57,109 @@ Nesta fase, o diodo Zener corrige o ripple ao limitar a voltagem da curva em 13V
 Primeiro, calculamos a tensão de pico (que representa o ápice da curva senoidal da tensão):
 
 Vpico = Ventrada * √2
+
 Vpico = tensão de pico
+
 Ventrada = tensão de entrada da tomada (127V)
+
 Vpico = 127 * √2 = 180V
 
 Como queremos um transformador com uma razão de 1/7,3, a tensão de saída (Vs) será:
+
 1/7,3 = Vs/180
+
 Vs = 24,6V
 
 Como o zener precisa de uma tensão mínima de 0,7V cada, devemos subtrair 1,4V da tensão de saída:
+
 Vs = 24,6V - 1,4V
+
 Vs = 23,2V
 
 ### Ripple:
 Consideramos uma tensão de ripple de 10% da tensão de saída, logo:
+
 Vripple = 0,1 * 23,2
+
 Vripple = 2,32V
 
 ### Tensão média:
 Como a corrente é alternada, os valores da ddp (diferença de potencial) e da corrente elétrica se alternam entre máximos e mínimos. 
+
 Para obter resultados aproximados do circuito, calculamos a tensão média.
 
 Vmin = 23,2V - 2,32V = 20,8V
+
 Vmed = (Vmáx + Vmin)/2
+
 Vmed = (23,2V + 20,8V)/2
+
 Vmed = 22V
 
 ### Correntes:
 Calculamos as correntes nos diferentes componentes do circuito:
 
+&nbsp;
+
 iLed:
+
 iLed = Vmed/Rled
+
 iLed = 22V/3300Ω
+
 iLed = 6,6mA
+
 Vmed = tensão média
+
 Rled = resistência no LED (compramos a resistência e a conectamos em série com o LED)
 
+&nbsp;
+
 iZener:
+
 iZener = (Vmed - Vz)/R
+
 iZener = (22V - 13V)/3300Ω
+
 iZener = 2,7mA
+
 Vmed = tensão média
+
 Vz = tensão do zener (compramos um diodo de 13V)
+
 R = resistência (compramos a resistência e a conectamos com o diodo de zener)
 
+&nbsp;
+
 iPotenciômetro:
+
 iPotenciômetro = Vmed/(Rp + R + Rz)
+
 iPotenciômetro = 22V/(10000Ω + 4700Ω + 3300Ω)
+
 iPotenciômetro = 1,2mA
+
 Vmed = tensão média
+
 Rp = resistência do potenciômetro
+
 R = resistência (compramos a resistência e a colocamos em série com o potenciômetro)
+
 Rz = resistência do diodo de zener
 
+&nbsp;
+
 iSaída:
+
 iSaída = 100mA (saída esperada na fonte)
 
 ### Capacitância:
 Para calcular a capacitância correta para filtrar o sistema, utilizamos a seguinte fórmula:
+
 C = iF * Vripple
+
 C = 110mA * 2 * 60Hz * 2,32V
+
 C ≈ 790μF
 
 
