@@ -20,6 +20,8 @@ Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacida
 | Plug AC 10A | R$6,00 |
 | ***TOTAL*** | ***R$47,74*** |
 
+No circuito real nós utilizamos um capacitor de 560μF porque nos venderam o modelo errado. O circuito funcionou como previsto.
+Também realizamos a troca de um dos resistores para uma resistência menor já que as conexões reais estavam apresentando valores diferentes.
 *Componentes comprados na Ca&Ma em São Carlos, 21/06/2023
 
 ## Componentes do Circuito
