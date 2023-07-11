@@ -8,4 +8,4 @@ Membros dos projetos:
 - Maria Rita Gomides Cruz Hott - 14758717
 - Kaiky Henrique Ribeiro Cintra - 13731160
 - Luiz Fellipe Catuzzi Araujo Hotoshi - 11871198
-- Maria Rita Gomides Cruz Hott - 14758717
+- Julia Cavallio Orlando - 14758721
