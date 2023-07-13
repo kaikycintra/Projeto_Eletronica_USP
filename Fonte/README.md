@@ -1,14 +1,18 @@
 # Fonte
-Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacidade de 100mA, partindo de uma corrente alternada de 127V e 60Hz.
+Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacidade de 100mA partindo de uma corrente alternada de 127V e 60Hz.
 
-##Vídeos
-Fonte construída: https://youtu.be/3VAhmxHJs3s
-Functionamento do circuito:
+&nbsp;
 
 Nós e a fonte <3
 
 <img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/main/Fonte/grupocsimoes.JPG" width="700">
 
+## Vídeos
+Fonte construída: https://youtu.be/3VAhmxHJs3s
+
+Functionamento do circuito:
+
+## Componentes do Circuito
 
 | Componente | Preço |
 | --- | --- |
@@ -29,7 +33,6 @@ No circuito real nós utilizamos um capacitor de 560μF porque nos venderam o mo
 Também realizamos a troca de um dos resistores para uma resistência menor já que as conexões reais estavam apresentando valores diferentes.
 *Componentes comprados na Ca&Ma em São Carlos, 21/06/2023
 
-## Componentes do Circuito
 ### Transformador: 
 Dispositivo elétrico que consegue alterar a tensão elétrica de entrada para níveis mais apropriados para uma aplicação específica, fazendo uso de enrolamentos e princípios eletromagnéticos da Lei de Faraday-Lenz. Neste projeto, utilizamos um transformador do laboratório que pôde ajustar a tensão em uma razão de 7.3 entre saída e entrada.
 ### Diodos:
