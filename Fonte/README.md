@@ -1,10 +1,9 @@
 # Fonte
 Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacidade de 100mA, partindo de uma corrente alternada de 127V e 60Hz.
 
-| Fonte construída | Functionamento do circuito |
-| --- | --- |
-| [![Watch the video](https://img.youtube.com/vi/3VAhmxHJs3s/maxresdefault.jpg)](https://youtu.be/3VAhmxHJs3s)
- | <video src="https://youtu.be/3VAhmxHJs3s" style="max-width: 730px;"></video> |
+##Vídeos
+Fonte construída: https://youtu.be/3VAhmxHJs3s
+Functionamento do circuito:
 
 Nós e a fonte <3
 
