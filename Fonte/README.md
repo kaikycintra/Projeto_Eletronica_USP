@@ -3,7 +3,8 @@ Nesse projeto, montamos uma fonte de tensão ajustável de 3V a 12V com capacida
 
 | Fonte construída | Functionamento do circuito |
 | --- | --- |
-| <video src="https://youtu.be/3VAhmxHJs3s" style="max-width: 730px;"></video> | <video src="https://youtu.be/3VAhmxHJs3s" style="max-width: 730px;"></video> |
+| [![Watch the video](https://img.youtube.com/vi/3VAhmxHJs3s/maxresdefault.jpg)](https://youtu.be/3VAhmxHJs3s)
+ | <video src="https://youtu.be/3VAhmxHJs3s" style="max-width: 730px;"></video> |
 
 Nós e a fonte <3
 
