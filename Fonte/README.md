@@ -169,12 +169,12 @@ C ≈ 790μF
 
 [Circuito no Falstad](https://tinyurl.com/2mrqdjvw)
 
-<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg" width="700">
+<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/main/Fonte/CircuitoFalstad.jpg" width="700">
 
 Esquemático no EAGLE
 
-<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg" width="700">
+<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/main/Fonte/fonte2.jpeg" width="700">
 
 Board no EAGLE
 
-<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/efbc84228148290c1601633abef27bb99c9a0139/Fonte/CircuitoFalstad.jpg" width="700">
+<img src="https://github.com/kaikycintra/Projeto_Eletronica_USP/blob/main/Fonte/fonte1.jpeg" width="700">
