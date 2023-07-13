@@ -10,7 +10,7 @@ Nós e a fonte <3
 ## Vídeos
 Fonte construída: https://youtu.be/3VAhmxHJs3s
 
-Functionamento do circuito:
+Functionamento do circuito: https://youtu.be/wee167FJJZs
 
 ## Componentes do Circuito
 
