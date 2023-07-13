@@ -11,7 +11,7 @@ Ao ligar o jogo, o texto "SNAKE" é mostrado no display da direita pra esquerda,
 ## Vídeos
 Jogando o Snake: https://youtu.be/IIoW_xa22tk
 
-Desenvolvimento:
+Desenvolvimento: https://youtu.be/A-D9CvuiIDg
 
 ## Componentes
 
